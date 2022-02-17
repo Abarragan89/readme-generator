@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMD = require('./utils/generateMarkdown');
 
+// Inquirer Prompts
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -54,7 +55,7 @@ const promptUser = () => {
     ])
 }
 
-// Create a function to write README file
+// Function to write README file
 function writeToFile(data) {
     return new Promise ((resolve, reject) => {
         fs.writeFile('./README.md', (data), err => {
@@ -68,10 +69,7 @@ function writeToFile(data) {
     });
 };
 
+// Initialize the prompt and subsequent callbacks to generate MD and write MD
 promptUser()
     .then(data => generateMD(data))
     .then(data => writeToFile(data));
-    // then send this data to generatePage
-        // this will create the html template with the user data
-    // then use fs to write this file.
-
