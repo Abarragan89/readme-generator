@@ -41,7 +41,7 @@ function generateMarkdown(data) {
   ${data.installation}
   \`\`\`
   ## Usage
-  ${data.usage}
+  ${data.usage} [How To Video](${data.video})
   ## Contribution
   ${data.contribution}
   ## Tests

@@ -15,7 +15,7 @@
   npm install
   ```
   ## Usage
-  Ensure all dependencies are installed first. 
+  Ensure all dependencies are installed first. [How to Video](https://drive.google.com/file/d/18GKCMOnDIwtE7hLajRJL8pL_651zFWgD/view)
   ## Contribution
   If you wish to contribute to the project, please Fork it and make a pull request. I will add it to the main once I reviewed and have decided I would like to incorporate a copy.
   ## Tests

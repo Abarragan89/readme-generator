@@ -29,6 +29,11 @@ const promptUser = () => {
         },
         {
             type: 'input',
+            name: 'video',
+            message: 'Add a link to a video showing the user how to use the application.'
+        },
+        {
+            type: 'input',
             name: 'contribution',
             message: 'What are the guidelines for contribution?',
         },
